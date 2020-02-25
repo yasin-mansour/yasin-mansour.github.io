@@ -55,3 +55,7 @@ ul.numbers {
 .line-through{
     text-decoration: line-through;
 }
+
+.pt {
+    padding-top: 15px;
+}
