@@ -1,0 +1,40 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.image {
+    max-width: 300px;
+}
+
+.moods {
+    align-items: flex-end;
+}
+
+body {
+    background: DimGrey;
+    color: white;
+}
+
+h1, h2 {
+    color: SkyBlue;
+}
+
+a {
+    color: red;
+}
+
+.highlights {
+    color: Gold;
+}
+
+ul.numbers {
+    list-style-type: decimal;
+}

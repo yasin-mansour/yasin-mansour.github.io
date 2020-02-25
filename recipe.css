@@ -52,8 +52,12 @@ ul.numbers {
     flex: 1;
 }
 
-.line-through{
+.line-through {
     text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .pt {
