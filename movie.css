@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background: url("images/background.png");
+}
+
+.page-header {
+    text-align: center;
+    background: url("images/bannerbg.png");
+}
+
+
+.header-title {
+    text-align: center;
+    text-shadow: 1px 2px gray;
+    font-weight: bold;
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+    border: 5px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+
+.right-side {
+    width: 250px;
+    order: 2;
+    background: rgb(162,185,100);
+}
+.right-side dl{
+    padding: 0 10px;
+    font-size: 0.7em;
+}
+
+.right-side dl dt {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.right-side dl dd {
+
+}
+.right-side dl dd  ul{
+    list-style-type: none;
+    padding: 0;
+}
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side .card {
+    width:   calc(50% - 10px);
+    float: left;
+    padding: 5px;
+}
+
+.left-side .card p:first-child{
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 25px;
+    background: rgb(232,220,155);
+    font-weight: bold;
+}
+
+.left-side .card img{
+    float: left;
+}
+
+.rotten {
+    background: url("images/rbg.png");
+    color: red;
+    font-size: 72px;
+    font-weight: bolder;
+    display: flex;
+}
+
+.footer{
+    text-align: center;
+    background: rgb(162,185,100);
+    margin: 0;
+    padding: 5px 0;
+}
+
+.validator{
+    float: right;
+}
