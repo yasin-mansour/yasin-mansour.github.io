@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retrieve Grade</title>
+</head>
+<body>
+<h1>Retrieve your grade</h1>
+<form action="http://mumstudents.org/params.php">
+    <p>Name: <input type="text" name="name"></p>
+    <p>Student ID: <input type="id" name="id"></p>
+    <div>
+        <label>Assignment</label>
+        <select name="assignment">
+            <option>lab1</option>
+            <option>lab12</option>
+            <option>lab3</option>
+        </select>
+    </div>
+    <div>
+        <label>Entry</label>
+        <input name="entry" for="entry" type="radio" value="Nov 2019"/>
+        <label>Nov 2019</label>
+        <input name="entry" for="entry" type="radio" value="Feb 2020"/>
+        <label>Feb 2020</label>
+    </div>
+    <div>
+        <input type="checkbox" name="confirm">
+        <labe>confirm that they are not lying</labe>
+    </div>
+    <input type="submit" value="Get Grade!">
+</form>
+
+</body>
+</html>

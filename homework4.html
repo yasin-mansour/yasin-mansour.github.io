@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework4</title>
+    <link rel="stylesheet" type="text/css" href="homework4.css">
+</head>
+<body>
+<form action="homework4.html">
+    <fieldset>
+        <legend>New user signUp:</legend>
+        <div>
+            <label>Name:</label>
+            <input name="name" type="text"/>
+        </div>
+        <div>
+            <label>Gender</label>
+            <input name="gender" for="gender" type="radio" value="male" name="gender"/>
+            <label>Male</label>
+            <input name="gender" for="gender"  type="radio" value="female" name="gender"/>
+            <label>Female</label>
+        </div>
+        <div>
+            <label>Age</label>
+            <input name="age" type="number"/>
+        </div>
+        <div>
+            <label>Personality type</label>
+            <input name="type" type="text" maxlength="4"/>
+            (<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)
+        </div>
+        <div>
+            <label>Favorite OS</label>
+            <select name="os">
+                <option>Windows</option>
+                <option>Mac</option>
+            </select>
+        </div>
+        <div>
+            <label>Seeking Age</label>
+            <input name="minAge" type="number"/>
+            <label class="second-label"> to</label>
+            <input name="maxAge" type="number">
+        </div>
+        <input type="submit" value="Sign Up">
+    </fieldset>
+</form>
+</body>
