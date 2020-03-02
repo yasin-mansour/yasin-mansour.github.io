@@ -1,0 +1,55 @@
+1. Can post requests be bookmarked? What are the problems?
+	No, because the bookmarke save only the URL, without any post parameters.
+2. What is the purpose of request dispatching?
+	is to forward the user to another servlet or jsp in same website
+3. What is the difference between redirect and request dispatch?
+	 forward
+		• passes the request to another resource on the server
+		• sometimes referred as “server side redirect“
+		• request and response objects passed to destination servlet.
+		• Browser is completely unaware of servlet forward and hence the URL
+		  in browser address bar will remain unchanged
+	 redirect
+		• server sends HTTP status code 3xx to client along with the redirect
+		  URL (usually 302 temporary redirect)
+		• client then sends a new request to the URL
+		• extra round trip
+		• address bar will change to new URL
+		• only http message sent, request and response objects cannot be sent
+4. What is an attribute ?
+	An object bound into one of the three servlet API objects
+		• HttpServletRequest
+		• HttpSession
+		• ServletContext
+5. What is the difference between attributes and parameters?
+	attributes: provided and used from the server
+	parameters: provided from the user and The Request object reads parameters from a submitted HTML
+				form by reading the name property
+6. What are dangers of using attributes?
+	• Not thread safe, Only request attributes thread safe.
+7. What does it mean to say that http is stateless? Give an example of a stateful protocol.
+	stateless protocol means that after a web server responds to a request, there is no “memory” of the
+	request or who sent it. 
+	FTP is a stateful protocol.
+8. Give 5 different methods for maintaining state information (count each attribute scope as one
+method).
+	• HttpServletRequest
+	• HttpSession
+	• ServletContext
+	• Request Parameters
+	• Cookies
+
+9. How long does a session last?
+	depending on The session timeout, typically from 15 to 30 minutes.
+10. What is a cookie, and how long does a cookie last?
+	cookie is set of data saved on the user browser
+	• temporary cookie
+		• browser removes when it closes
+		• this is default
+		• session cookies are like this
+	• permanent cookie
+		• a cookie that has a max age set
+11. What is the purpose of URL rewriting?
+	Url rewriting is a process of appending or modifying any url structure while loading a page
+12. Why does the request attribute report ‘null’ for the maintaining state demo?
+	because doGet is a deffrence request than the doPost, that means you can set a request attribute on doGet and expect to find it in the doPost
