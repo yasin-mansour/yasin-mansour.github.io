@@ -1,0 +1,21 @@
+1. What is the main value of Java Server Pages?
+    separate display from processing, i.e., separate html from java
+2. How are JSP pages related to servlets?
+    JSP life cycle is similar to the servlet life cycle with an additional step of compiling a JSP into servlet.
+3. How are JSP pages related to HTML?
+    Jsp is html with a little java mixed in.
+4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet .
+    <% count++; %>, count++;
+5. Give an example of a JSP declaration and show how it will look in the JSP servlet.
+    <%! int count = 0; %>, int count = 0;
+6. Give an example of a JSP comment and show how it will look in the JSP servlet.
+    <%-- jsp comment --%>, <!– jsp Comment -->
+7. Give an example of a JSP expression and show how it will look in the JSP servlet.
+    <%= count++; %>, System.out.print(count++);
+8. Give an example of a JSP directive and show how it will look in the JSP servlet.
+    <%@ page import="java.util.Date" %>, import java.util.Date;
+9. Explain how an EL expression is evaluated.
+    evaluates the expression and writes it out to the HTML page at its location on the page
+10. Explain how servlet attributes are involved in EL expressions.
+11. Explain how servlets and JSPs use request dispatch to interact.
+    Typical implementation introduces just one servlet which generically dispatches requests to JSP handling code. (This is the approach of the Struts framework.)
