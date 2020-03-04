@@ -1,0 +1,20 @@
+1. Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL forEach.
+        <%
+        for( Student student : (Student []) request.getAttribute("students")) {
+        out.print("<tr><td>"+ student.getName() +"<td><td>"+ student.getAge()+"<td></tr>");
+        }
+        %>
+2. How do custom tags relate to JSTL?
+    JSTL is a library have a set of custom tags
+3. What is the role of the URI in the TLD and the taglib directive?
+    is the library location.
+4. What is a tag handler class?
+    it is a class implements the tag functionality.
+5. What is the role of attribute setters in a tag handler class?
+    The JSP engine invokes the setter methods for each attribute appropriately after the tag handler is initialized and before the doStartTag()
+6. What is the role of the doTag() method in a tag handler class?
+    it used to generate content for the new custom tag.
+7. What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in a doTag() method?
+    It outputs "Hi bob" string in the page.
+8. What does the operation getJspBody().invoke(null) do when called in a doTag() method?
+    When getJspBody().invoke(null) is called, it is the output resulting from the execution of the tag body's JSP content that gets passed to the client, not the JSP code itself.
