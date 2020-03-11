@@ -1,0 +1,90 @@
+1. Determine what this Javascript code will print out (without running it):
+x = 1;
+var a = 5;
+var b = 10;
+var c = function (a, b, c) {
+    var x = 10;
+    document.write(x);
+    document.write(a);
+    var f = function (a, b, c) {
+        b = a;
+        document.write(b);
+        b = c;
+        var x = 5;
+    }
+    f(a, b, c);
+    document.write(b);
+}
+c(8, 9, 10);
+document.write(b);
+document.write(x);
+}
+
+answer: 10889101
+
+2. What is the difference between a method and function?
+     a method is a function that belongs to an object
+3. What does 'this' refer to when used in a Java method?
+    It works as a reference to the current object
+4. What does 'this' refer to when used in a JavaScript method?
+    this mean the content that the function will be executed on it, by default it is the object that belongs to, but it can be changed
+5. What does 'this' refer to when used in a JavaScript constructor function?
+    In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+When f is called by x.f( ), what does 'this' refer to?
+    this refer to x
+7. What is a free variable in JavaScript?
+    A variable referred to by a function that is
+    not one of its parameters or local variables.
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+    var x = {
+        name: "fred",
+        major: "music",
+        max: function (n1, n2){
+        if(n1 > n2){
+            return n2;
+        } else if(n1 < n2){
+            return n1;
+        } else {
+            return n1*n2;
+        }
+    }
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+Employee objects have the following fields: name, salary, position.
+    function employ(name, salary, position){
+        this.name = name;
+        this.salary = salary;
+        this.position = position;
+    }
+    employ1 = new employ("a", 1, "b");
+    employ2 = new employ("a", 1, "b");
+    employ3 = new employ("a", 1, "b");
+
+10. Write a Javascript function that takes any number of input arguments and returns the product of the
+arguments.
+    var product = 1;
+    for (i = 0; i < arguments.length; i++) {
+        product = product * arguments[i] ;
+    }
+11. Write an arrow function that returns the maximum of its three input arguments
+    (a1,a2, a3) =>{
+        if(a1 > a2){
+            if(a1 > a3)
+                return a1
+            else
+            return a3
+        }
+        else if(a1 > a3){
+                    if(a1 > a2)
+                        return a1
+                     else
+                        return a2
+        } else {
+                if(a2 > a3)
+                   return a2
+                else
+                   return a3
+        }
+
+    }
